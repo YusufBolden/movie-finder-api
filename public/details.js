@@ -23,7 +23,7 @@ async function loadMovieDetails() {
     movieDetails.innerHTML = `
       <div class="bg-gray-800 p-6 rounded">
         <div class="flex flex-col md:flex-row gap-6">
-          <img src="${details.Poster !== "N/A" ? details.Poster : "/noImage.png"}"
+          <img src="${details.Poster !== "N/A" ? details.Poster : "/placeholder.png"}"
                class="w-full md:w-1/3 rounded"/>
           <div>
             <h2 class="text-3xl font-bold mb-2">${details.Title} (${details.Year})</h2>

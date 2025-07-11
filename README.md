@@ -7,6 +7,7 @@ Movie Finder is a responsive web application built with **Node.js**, **Express**
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![OMDb](https://img.shields.io/badge/OMDb-FF9E0F?style=for-the-badge)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
 ---
 
@@ -22,12 +23,22 @@ Movie Finder is a responsive web application built with **Node.js**, **Express**
 
 🚨 **Clean 404 JSON:** API routes gracefully return `{ Failed to load details. Server error }` for unmatched endpoints.
 
-
 ---
 
-## 🚢 Live Deployment
+## 🚀 Deployment
 
-[View live on Render](https://movie-finder-api-al5o.onrender.com)
+This project is deployed on [Render](https://movie-finder-api-al5o.onrender.com), which handles the Node.js server and environment variables.
+
+### 📦 Steps to deploy on Render
+1. Push your code to GitHub.
+2. Log into [Render](https://dashboard.render.com) and create a **New Web Service**.
+3. Connect your GitHub repository.
+4. Set the **Build Command** to `npm install` and the **Start Command** to `npm start`.
+5. Add your environment variables under the "Environment" tab (for example, `OMDB_API_KEY`).
+6. Click **Create Web Service** and wait for Render to build and deploy your app.
+
+✅ Your server will be live at `https://your-app.onrender.com`.
+
 
 ---
 

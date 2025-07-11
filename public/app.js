@@ -7,7 +7,6 @@ searchForm.addEventListener('submit', async (e) => {
   const title = searchInput.value.trim();
   if (!title) return;
 
-  // Update the URL without reloading the page
   window.history.pushState({}, '', `/?title=${encodeURIComponent(title)}`);
 
   movieList.innerHTML = '<p class="text-center mt-4">Loading...</p>';

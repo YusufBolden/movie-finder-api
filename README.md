@@ -27,7 +27,7 @@ Movie Finder is a responsive web application built with **Node.js**, **Express**
 
 ## 🚀 Deployment
 
-This project is deployed on [Render](https://movie-finder-api-al5o.onrender.com), which handles the Node.js server and environment variables.
+My project is deployed at [Live Demo](https://movie-finder-api-al5o.onrender.com), which handles the Node.js server and environment variables.
 
 ### 📦 Steps to deploy on Render
 1. Push your code to GitHub.

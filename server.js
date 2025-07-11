@@ -14,6 +14,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api", movieRoutes);
 
+app.use("/api", (req, res) => {
+  res.status(404).json({ error: "Not found" });
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
 });

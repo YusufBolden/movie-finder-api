@@ -43,32 +43,6 @@ cd movie-finder-api
 npm install
 ```
 ---
-## 🚀 Features
-
-🎥 **Movie Search:** Enter a title to search for multiple matching movies.
-
-📝 **Movie Details:** Click any result to view full details (plot, genre, director, ratings) on a dedicated page.
-
-⚡ **Fast CDN UI:** No build step — Tailwind is loaded via CDN, so styles apply instantly.
-
-📱 **Responsive Design:** Works cleanly on desktops, tablets, and mobile.
-
-🚨 **404 Handling:** Invalid API requests return clean JSON errors.
-
-🖼 **Fallback Images:** If a movie has no poster, a placeholder is displayed.
-
----
-
-## 🚀 Local Setup
-
-To set up and run this project locally with Tailwind CSS and Vite:
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/YusufBolden/ip-address-tracker.git
-cd ip-address-tracker
-```
 
 2. **Install project dependencies**
 

@@ -8,6 +8,7 @@ Movie Finder is a responsive web application built with **Node.js**, **Express**
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![OMDb](https://img.shields.io/badge/OMDb-FF9E0F?style=for-the-badge)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
+![Morgan](https://img.shields.io/badge/Morgan-003366?style=for-the-badge)
 
 ---
 
@@ -59,7 +60,7 @@ npm install
 
 ```
 npm init -y
-npm install express axios nodemon dotenv
+npm install express axios nodemon dotenv morgan
 ```
 This installs:
 
@@ -72,6 +73,8 @@ axios for HTTP requests to OMDb
 dotenv for environment variables
 
 nodemon for auto-restarting in development
+
+morgan for logging HTTP requests in the console
 
 3. **Create your .env file**
 

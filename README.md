@@ -27,7 +27,7 @@ Movie Finder is a responsive web application built with **Node.js**, **Express**
 
 ## 🚢 Live Deployment
 
-_This project can be easily deployed on platforms like **Railway**, **Render**, or **Heroku**. Simply push your repository and add the `OMDB_API_KEY` environment variable._
+[View live on Render](https://movie-finder-api-al5o.onrender.com)
 
 ---
 

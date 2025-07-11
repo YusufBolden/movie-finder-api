@@ -131,7 +131,7 @@ movie-finder-api/
 │   ├── index.html
 │   ├── movieDetails.png
 │   ├── placeholder.png
-│   ├── reel.png
+│   ├── reel.png (favicon)
 │   └── searchResults.png
 ├── .env
 ├── .gitignore

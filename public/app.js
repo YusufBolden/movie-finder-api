@@ -7,6 +7,9 @@ searchForm.addEventListener('submit', async (e) => {
   const title = searchInput.value.trim();
   if (!title) return;
 
+  // Update the URL without reloading the page
+  window.history.pushState({}, '', `/?title=${encodeURIComponent(title)}`);
+
   movieList.innerHTML = '<p class="text-center mt-4">Loading...</p>';
 
   try {
@@ -19,13 +22,14 @@ searchForm.addEventListener('submit', async (e) => {
     }
 
     movieList.innerHTML = data.Search.map(movie => `
-      <a href="/details.html?id=${movie.imdbID}"
-         class="bg-gray-800 p-3 rounded hover:bg-gray-700 block">
-        <img src="${movie.Poster !== "N/A" ? movie.Poster : "/placeholder.png"}"
-             alt="${movie.Title}"
-             class="w-full h-64 object-cover rounded mb-2"/>
-        <h3 class="text-lg font-semibold">${movie.Title}</h3>
-        <p class="text-gray-400">${movie.Year}</p>
+      <a href="/details.html?id=${movie.imdbID}" class="block">
+        <div class="bg-gray-800 p-3 rounded hover:bg-gray-700">
+          <img src="${movie.Poster !== "N/A" ? movie.Poster : "/placeholder.png"}"
+               alt="${movie.Title}"
+               class="w-full h-64 object-cover rounded mb-2"/>
+          <h3 class="text-lg font-semibold">${movie.Title}</h3>
+          <p class="text-gray-400">${movie.Year}</p>
+        </div>
       </a>
     `).join('');
   } catch {
